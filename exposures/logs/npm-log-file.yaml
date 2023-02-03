@@ -3,7 +3,7 @@ id: npm-log-file
 info:
   name: Publicly accessible NPM Log file
   author: sheikhrishad,DhiyaneshDk
-  severity: low
+  severity: high
   reference:
     - https://github.com/maurosoria/dirsearch/blob/master/db/dicc.txt
   metadata:

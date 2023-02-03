@@ -15111,6 +15111,12 @@ requests:
           - "Server: Hunchentoot"
 
       - type: word
+        name: SecureStack
+        part: header
+        words:
+          - "Server: SecureStack"
+
+      - type: word
         name: weblate
         words:
           - Weblate

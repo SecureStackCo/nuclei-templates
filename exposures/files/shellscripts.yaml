@@ -3,7 +3,7 @@ id: shellscripts
 info:
   name: Public shellscripts
   author: panch0r3d
-  severity: low
+  severity: medium
   tags: bash,exposure,files
 
 requests:

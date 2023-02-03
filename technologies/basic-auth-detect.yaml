@@ -3,7 +3,7 @@ id: basic-auth-detect
 info:
   name: Basic Auth Detection
   author: w4cky_
-  severity: info
+  severity: low
   tags: tech,basic-auth
 
 requests:

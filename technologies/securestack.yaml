@@ -1,0 +1,26 @@
+id: detect-securestack
+
+info:
+  name: Detect SecureStack Fingerprint
+  author: 6mile
+  severity: info
+  description: Detect if target is using SecureStack technology
+  reference:
+    - https://github.com/0x727/FingerprintHub
+  classification:
+    cwe-id: CWE-200
+  tags: tech
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "Server: SecureStack"

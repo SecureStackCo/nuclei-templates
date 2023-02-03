@@ -3,7 +3,7 @@ id: ssh-authorized-keys
 info:
   name: SSH Authorized Keys
   author: geeknik
-  severity: low
+  severity: high
   reference:
     - https://www.ssh.com/academy/ssh/authorized-key
   tags: config,exposure,ssh
