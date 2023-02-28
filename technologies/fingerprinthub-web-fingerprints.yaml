@@ -789,11 +789,8 @@ requests:
         name: apache-kylin
         words:
           - <meta http-equiv="refresh" content="1;url=kylin">
-
-      - type: word
-        name: apache-kylin
-        words:
           - href="/kylin/"
+        condition: or
 
       - type: word
         name: apache-mesos
@@ -841,6 +838,13 @@ requests:
         name: apache-solr
         words:
           - "Location: /solr/"
+
+      - type: word
+        part: header
+        name: apache-dubbo
+        words:
+          - 'WWW-Authenticate: Basic realm="dubbo"'
+        case-insensitive: true
 
       - type: word
         name: apache-struts
@@ -14393,13 +14397,6 @@ requests:
         name: yadongsoft-fs3
         words:
           - 神盾fs<sup>3</sup>文档安全共享系统v2.0</div>
-
-      - type: word
-        condition: and
-        name: yapi
-        words:
-          - YApi
-          - 可视化接口管理平台
 
       - type: word
         name: yearning
