@@ -6,7 +6,7 @@ info:
   severity: high
   reference:
     - https://www.ssh.com/academy/ssh/authorized-key
-  tags: config,exposure,ssh
+  tags: config,exposure,ssh,securestack-fast
 
 requests:
   - method: GET

@@ -10,7 +10,7 @@ info:
   metadata:
     verified: true
     google-query: intitle:"index of" ".npmrc"
-  tags: npm,exposure
+  tags: npm,exposure,securestack-fast
 
 requests:
   - method: GET

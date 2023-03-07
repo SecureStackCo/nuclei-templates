@@ -9,7 +9,7 @@ info:
   metadata:
     verified: true
     shodan-query: html:"npm-debug.log"
-  tags: npm,logs,exposure
+  tags: npm,logs,exposure,securestack-fast
 
 requests:
   - method: GET

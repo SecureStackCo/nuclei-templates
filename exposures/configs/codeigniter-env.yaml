@@ -5,7 +5,7 @@ info:
   author: emenalf
   severity: high
   description: Codeigniter .env file was discovered.
-  tags: config,exposure,codeigniter
+  tags: config,exposure,codeigniter,securestack-fast
 
 requests:
   - method: GET

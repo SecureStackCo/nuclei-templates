@@ -4,7 +4,7 @@ info:
   name: Basic Auth Detection
   author: w4cky_
   severity: low
-  tags: tech,basic-auth
+  tags: tech,basic-auth,securestack-fast
 
 requests:
   - method: GET
