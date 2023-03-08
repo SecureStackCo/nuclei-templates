@@ -4,7 +4,7 @@ info:
   name: Public shellscripts
   author: panch0r3d
   severity: medium
-  tags: bash,exposure,files
+  tags: bash,exposure,files,securestack-fast
 
 requests:
   - method: GET

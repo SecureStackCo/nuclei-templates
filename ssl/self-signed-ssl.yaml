@@ -11,7 +11,7 @@ info:
     certificates are easy to make and do not cost money. However, they do not provide any trust value.
   remediation: |
     Purchase or generate a proper SSL certificate for this service.
-  tags: ssl
+  tags: ssl,securestack-fast
 
 ssl:
   - address: "{{Host}}:{{Port}}"

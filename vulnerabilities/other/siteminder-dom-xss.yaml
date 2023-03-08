@@ -15,7 +15,7 @@ info:
   metadata:
     verified: true
     google-query: inurl:"smpwservices.fcc"
-  tags: dom,xss,siteminder
+  tags: dom,xss,siteminder,securestack-fast
 
 requests:
   - method: GET

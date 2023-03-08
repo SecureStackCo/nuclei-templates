@@ -7,7 +7,7 @@ info:
   description: agilecrm subdomain takeover was detected.
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/145
-  tags: takeover,agilecrm
+  tags: takeover,agilecrm,securestack-fast
 
 requests:
   - method: GET
