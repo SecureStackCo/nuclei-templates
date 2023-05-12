@@ -5,6 +5,8 @@ info:
   author: w4cky_
   severity: low
   tags: tech,basic-auth,securestack-fast
+  metadata:
+    max-request: 1
 
 http:
   - method: GET

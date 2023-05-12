@@ -5,6 +5,8 @@ info:
   author: panch0r3d
   severity: low
   tags: misc,apple,securestack-fast
+  metadata:
+    max-request: 3
 
 http:
   - method: GET

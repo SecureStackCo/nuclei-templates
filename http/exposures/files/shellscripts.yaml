@@ -5,6 +5,8 @@ info:
   author: panch0r3d
   severity: medium
   tags: bash,exposure,files,securestack-fast
+  metadata:
+    max-request: 23
 
 http:
   - method: GET
