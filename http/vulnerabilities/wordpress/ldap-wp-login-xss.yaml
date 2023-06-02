@@ -5,7 +5,7 @@ info:
   author: r3Y3r53
   severity: medium
   description: |
-    The plugin does not escape generated URLs before outputing them in attrubutes, leading to Reflected Cross-Site Scripting
+    The plugin does not escape generated URLs before outputing them in attrubutes leading to Reflected Cross-Site Scripting
   remediation: Fixed in version 3.0.2
   reference:
     - https://wpscan.com/vulnerability/1dc2cec8-e3dd-414b-8ccb-d73d51b051ee

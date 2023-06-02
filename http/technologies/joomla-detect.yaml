@@ -4,7 +4,7 @@ info:
   author: ricardomaia
   severity: info
   description: |
-    Joomla, also spelled Joomla! (with an exclamation mark) and sometimes abbreviated as J!, is a free and open-source content management system (CMS) for publishing web content on websites.
+    Joomla also spelled Joomla! (with an exclamation mark) and sometimes abbreviated as J! is a free and open-source content management system (CMS) for publishing web content on websites.
   reference:
     - https://www.joomla.org/
     - https://github.com/joomla/joomla-cms

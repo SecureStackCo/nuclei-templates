@@ -5,7 +5,7 @@ info:
   author: 0ri2N
   severity: info
   description: |
-    Intelligence X is a search engine and data archive. Search Tor, I2P, data leaks and the public web by email, domain, IP, CIDR, Bitcoin address and more.
+    Intelligence X is a search engine and data archive. Search Tor I2P data leaks and the public web by email domain IP CIDR Bitcoin address and more.
   reference:
     - https://intelx.io
     - https://github.com/IntelligenceX/SDK

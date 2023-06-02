@@ -5,7 +5,7 @@ info:
   author: tess,DhiyaneshDK
   severity: info
   description: |
-    WordPress user registration is currently configured so that anyone can register as a user, thereby enabling an attacker to possibly access sensitive data and execute unathorized operations.
+    WordPress user registration is currently configured so that anyone can register as a user thereby enabling an attacker to possibly access sensitive data and execute unathorized operations.
   remediation: |
     Disable user registration if not needed. To do so, log in as an administrator and go to Settings -> General and uncheck "Anyone can register."
   reference:

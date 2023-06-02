@@ -6,7 +6,7 @@ info:
   severity: info
   tags: network,rmi,java
   description: |
-    Java Remote Method Invocation protocol is susceptible to information disclosure. It allows for unauthenticated network attacks, which can result in unauthorized operating system takeover including arbitrary code execution.
+    Java Remote Method Invocation protocol is susceptible to information disclosure. It allows for unauthenticated network attacks which can result in unauthorized operating system takeover including arbitrary code execution.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
     cvss-score: 0.0

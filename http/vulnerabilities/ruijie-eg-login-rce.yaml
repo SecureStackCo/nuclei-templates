@@ -4,7 +4,7 @@ info:
   name: Ruijie EG Easy Gateway - Remote Command Execution
   author: pikpikcu,pdteam
   severity: critical
-  description: Ruijie EG Easy Gateway login.php has remote commmand execution vulnerability, which can lead to the disclosure of administrator account and password.
+  description: Ruijie EG Easy Gateway login.php has remote commmand execution vulnerability which can lead to the disclosure of administrator account and password.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
     cvss-score: 10.0

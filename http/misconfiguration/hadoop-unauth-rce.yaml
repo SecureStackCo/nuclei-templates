@@ -5,7 +5,7 @@ info:
   author: pdteam,Couskito
   severity: critical
   description: |
-    Apache Hadoop YARN ResourceManager is susceptible to remote code execution. An attacker can execute malware, obtain sensitive information, modify data, and/or gain full control over a compromised system without entering necessary credentials.
+    Apache Hadoop YARN ResourceManager is susceptible to remote code execution. An attacker can execute malware obtain sensitive information modify data and/or gain full control over a compromised system without entering necessary credentials.
   reference:
     - http://archive.hack.lu/2016/Wavestone%20-%20Hack.lu%202016%20-%20Hadoop%20safari%20-%20Hunting%20for%20vulnerabilities%20-%20v1.0.pdf
     - https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/linux/http/hadoop_unauth_exec.rb

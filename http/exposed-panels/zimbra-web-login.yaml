@@ -5,7 +5,7 @@ info:
   author: powerexploit
   severity: info
   description: |
-    Zimbra Collaboration Suite panel was detected. Zimbra Collaboration Suite simplifies the communication environment, connects people over multiple channels, and provides a single place to manage collaboration and communication.
+    Zimbra Collaboration Suite panel was detected. Zimbra Collaboration Suite simplifies the communication environment connects people over multiple channels and provides a single place to manage collaboration and communication.
   classification:
     cvss-metrics: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
     cvss-score: 0.0

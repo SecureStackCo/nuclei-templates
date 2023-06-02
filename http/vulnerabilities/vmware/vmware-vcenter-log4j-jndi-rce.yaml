@@ -5,7 +5,7 @@ info:
   author: _0xf4n9x_
   severity: critical
   description: |
-    VMware VCenter is susceptible to remote code execution via the Apache Log4j framework. An attacker can execute malware, obtain sensitive information, modify data, and/or gain full control over a compromised system without entering necessary credentials.
+    VMware VCenter is susceptible to remote code execution via the Apache Log4j framework. An attacker can execute malware obtain sensitive information modify data and/or gain full control over a compromised system without entering necessary credentials.
   reference:
     - https://www.vmware.com/security/advisories/VMSA-2021-0028.html
     - https://github.com/advisories/GHSA-jfh8-c2jp-5v3q

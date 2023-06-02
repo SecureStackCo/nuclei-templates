@@ -4,7 +4,7 @@ info:
   name: Apache Ranger - Default Login
   author: For3stCo1d
   severity: high
-  description: Apache Ranger contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information, modify data, and/or execute unauthorized operations.
+  description: Apache Ranger contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://github.com/apache/ranger
   classification:

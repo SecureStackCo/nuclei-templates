@@ -5,7 +5,7 @@ info:
   author: dhiyaneshDk
   severity: high
   description: |
-    Adobe Experience Manager contains a cross-site scripting vulnerability via requests using the selector childlist when the dispatcher does not respect the content-type responded by AEM and flips from application/json to text/html. As a consequence, the reflected suffix is executed and interpreted in the browser.
+    Adobe Experience Manager contains a cross-site scripting vulnerability via requests using the selector childlist when the dispatcher does not respect the content-type responded by AEM and flips from application/json to text/html. As a consequence the reflected suffix is executed and interpreted in the browser.
   reference:
     - https://github.com/thomashartm/burp-aem-scanner/blob/master/src/main/java/burp/actions/xss/FlippingTypeWithChildrenlistSelector.java
     - https://cystack.net/en/plugins/cystack.remote.aem_childlist_selector_xss

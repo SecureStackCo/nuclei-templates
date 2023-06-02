@@ -5,7 +5,7 @@ info:
   author: powerexploit
   severity: info
   description: |
-    FastCGI echo endpoint script was detected, which lists several kinds of sensitive information such as port numbers, server software versions, port numbers, and IP addresses.
+    FastCGI echo endpoint script was detected which lists several kinds of sensitive information such as port numbers server software versions port numbers and IP addresses.
   remediation: Remove or disable FastCGI module delivered with the Apache httpd server which is incorporated into the Oracle Application Server.FastCGI echo programs (echo and echo2).
   reference:
     - https://www.exploit-db.com/ghdb/183

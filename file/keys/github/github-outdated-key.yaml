@@ -5,7 +5,7 @@ info:
   author: naglis
   severity: info
   description: |
-    At approximately 05:00 UTC on March 24, out of an abundance of caution, we replaced our RSA SSH host key used to secure Git operations for GitHub.com.
+    At approximately 05:00 UTC on March 24 out of an abundance of caution we replaced our RSA SSH host key used to secure Git operations for GitHub.com.
   reference:
     - https://github.blog/2023-03-23-we-updated-our-rsa-ssh-host-key/
     - https://web.archive.org/web/20230316194229/https://docs.github.com/en/enterprise-cloud@latest/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints

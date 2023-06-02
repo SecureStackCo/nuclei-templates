@@ -4,7 +4,7 @@ info:
   name: Detect PRTG
   author: geeknik
   severity: info
-  description: Monitor all the systems, devices, traffic, and applications in your IT infrastructure -- https://www.paessler.com/prtg
+  description: Monitor all the systems devices traffic and applications in your IT infrastructure -- https://www.paessler.com/prtg
   tags: tech,prtg
   metadata:
     max-request: 3

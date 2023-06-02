@@ -5,7 +5,7 @@ info:
   author: ritikchaddha
   severity: medium
   description: |
-    AVTECH DVR device, Search.cgi can be accessed directly. Search.cgi is responsible for searching and accessing cameras in the local network. Search.cgi provides the cgi_query function.
+    AVTECH DVR device Search.cgi can be accessed directly. Search.cgi is responsible for searching and accessing cameras in the local network. Search.cgi provides the cgi_query function.
   metadata:
     max-request: 1
     verified: "true"

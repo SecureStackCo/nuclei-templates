@@ -4,7 +4,7 @@ info:
   name: Ruijie Smartweb Management System Password Information Disclosure
   author: pikpikcu
   severity: high
-  description: The wireless smartweb management system of Ruijie Networks Co., Ltd. has a logic flaw. An attacker can obtain the administrator account and password from a low-privileged user, thereby escalating the low-level privilege to the administrator's privilege.
+  description: The wireless smartweb management system of Ruijie Networks Co. Ltd. has a logic flaw. An attacker can obtain the administrator account and password from a low-privileged user thereby escalating the low-level privilege to the administrator's privilege.
   reference:
     - https://www.cnvd.org.cn/flaw/show/CNVD-2021-17369
   classification:

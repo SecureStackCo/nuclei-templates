@@ -5,7 +5,7 @@ info:
   author: Nullfuzz
   severity: info
   description: |
-    OpenEthereum is the fastest, lightest, and most "secure" Ethereum client. By default OpenEthereum runs a JSON-RPC HTTP server on port 8545/TCP
+    OpenEthereum is the fastest lightest and most "secure" Ethereum client. By default OpenEthereum runs a JSON-RPC HTTP server on port 8545/TCP
   reference:
     - https://github.com/openethereum/openethereum
     - https://openethereum.github.io/

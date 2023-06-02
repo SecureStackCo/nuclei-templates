@@ -4,7 +4,7 @@ info:
   name: WordPress Modula Image Gallery <2.6.7 - Cross-Site Scripting
   author: Akincibor
   severity: medium
-  description: WordPress Modula Image Gallery 2.6.7 does not escape some URLs before outputting them back in attributes, leading to reflected cross-site scripting.
+  description: WordPress Modula Image Gallery 2.6.7 does not escape some URLs before outputting them back in attributes leading to reflected cross-site scripting.
   reference:
     - https://wpscan.com/vulnerability/ee248078-89ee-4cc0-b0fe-e932cd00db3e
     - https://wordpress.org/plugins/modula-best-grid-gallery

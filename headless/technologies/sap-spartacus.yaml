@@ -4,7 +4,7 @@ info:
   name: SAP Spartacus detect
   author: TechbrunchFR
   severity: info
-  description: Spartacus is a lean, Angular-based JavaScript storefront for SAP Commerce Cloud that communicates exclusively through the Commerce REST API.
+  description: Spartacus is a lean Angular-based JavaScript storefront for SAP Commerce Cloud that communicates exclusively through the Commerce REST API.
   reference:
     - https://github.com/SAP/spartacus
   metadata:

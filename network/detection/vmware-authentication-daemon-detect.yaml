@@ -5,7 +5,7 @@ info:
   author: pussycat0x
   severity: info
   description: |
-    vmauthd is the VMWare authentication daemon that is included with many VMWare products, including ESX(i), and Workstation.
+    vmauthd is the VMWare authentication daemon that is included with many VMWare products including ESX(i) and Workstation.
   metadata:
     max-request: 2
     verified: true

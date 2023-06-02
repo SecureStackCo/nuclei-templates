@@ -4,7 +4,7 @@ info:
   name: Riak Detection
   author: pussycat0x
   severity: info
-  description: Riak is a distributed NoSQL key-value data store that offers high availability, fault tolerance, operational simplicity, and scalability.
+  description: Riak is a distributed NoSQL key-value data store that offers high availability fault tolerance operational simplicity and scalability.
   metadata:
     max-request: 2
     verified: true

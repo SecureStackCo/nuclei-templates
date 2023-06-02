@@ -4,7 +4,7 @@ info:
   name: IIS - Short Name Detect
   author: nodauf
   severity: info
-  description: A website running via IIS on an old .net framework contains a get request vulnerability. Using the the tilde character "~" in the request, an attacker can locate short names of files and folders not normally visible.
+  description: A website running via IIS on an old .net framework contains a get request vulnerability. Using the the tilde character "~" in the request an attacker can locate short names of files and folders not normally visible.
   reference:
     - https://github.com/lijiejie/IIS_shortname_Scanner
     - https://www.exploit-db.com/exploits/19525

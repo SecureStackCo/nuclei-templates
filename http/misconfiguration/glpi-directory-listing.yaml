@@ -4,7 +4,7 @@ info:
   name: GLPI Directory Listing
   author: RedTeamBrasil,ImNightmaree
   severity: low
-  description: In certain cases, system administrators leave directory listing enabled which can sometimes expose sensitive files.
+  description: In certain cases system administrators leave directory listing enabled which can sometimes expose sensitive files.
   tags: glpi,misconfig
   metadata:
     max-request: 2

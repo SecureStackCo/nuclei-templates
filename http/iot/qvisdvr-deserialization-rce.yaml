@@ -5,7 +5,7 @@ info:
   author: me9187
   severity: critical
   description: |
-    QVISDVR Java-Deserialization was discovered, which could allow remote code execution.
+    QVISDVR Java-Deserialization was discovered which could allow remote code execution.
   reference:
     - https://twitter.com/Me9187/status/1414606876575162373
   classification:

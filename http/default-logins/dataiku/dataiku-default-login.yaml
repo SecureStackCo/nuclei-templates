@@ -4,7 +4,7 @@ info:
   name: Dataiku - Default Login
   author: random-robbie
   severity: high
-  description: Dataiku contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information, modify data, and/or execute unauthorized operations. This vulnerability may also lead to server-side request forgery and/or remote code execution.
+  description: Dataiku contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information modify data and/or execute unauthorized operations. This vulnerability may also lead to server-side request forgery and/or remote code execution.
   reference:
     - https://www.dataiku.com
   classification:

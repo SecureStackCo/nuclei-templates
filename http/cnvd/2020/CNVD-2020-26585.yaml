@@ -5,7 +5,7 @@ info:
   author: pikpikcu,Co5mos
   severity: critical
   description: |
-    ShowDoc is an online API and technical documentation tool that is very suitable for IT teams. Showdoc has a file upload vulnerability, which attackers can exploit to gain server permissions.
+    ShowDoc is an online API and technical documentation tool that is very suitable for IT teams. Showdoc has a file upload vulnerability which attackers can exploit to gain server permissions.
   reference:
     - https://vul.wangan.com/a/CNVD-2020-26585
     - https://blog.csdn.net/qq_48985780/article/details/122211136

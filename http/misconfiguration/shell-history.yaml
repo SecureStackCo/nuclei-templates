@@ -4,7 +4,7 @@ info:
   name: Shell History
   author: pentest_swissky,geeknik
   severity: low
-  description: Discover history for bash, ksh, sh, and zsh
+  description: Discover history for bash ksh sh and zsh
   tags: misconfig
   metadata:
     max-request: 4

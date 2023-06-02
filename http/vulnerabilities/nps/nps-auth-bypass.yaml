@@ -5,7 +5,7 @@ info:
   author: SleepingBag945
   severity: high
   description: |
-    This will reveal all parameters configured on the NPS, including the account username and password of the proxy.
+    This will reveal all parameters configured on the NPS including the account username and password of the proxy.
   reference:
     - https://mari0er.club/post/nps.html/
   metadata:

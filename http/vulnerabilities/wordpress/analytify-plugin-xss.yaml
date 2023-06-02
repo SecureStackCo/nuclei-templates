@@ -5,7 +5,7 @@ info:
   author: Akincibor
   severity: medium
   description: |
-    WordPress Analytify 4.2.1 does not escape the current URL before outputting it back in a 404 page when the 404 tracking feature is enabled, leading to reflected cross-site scripting.
+    WordPress Analytify 4.2.1 does not escape the current URL before outputting it back in a 404 page when the 404 tracking feature is enabled leading to reflected cross-site scripting.
   reference:
     - https://wpscan.com/vulnerability/b8415ed5-6fd0-42fe-9201-73686c1871c5
   metadata:

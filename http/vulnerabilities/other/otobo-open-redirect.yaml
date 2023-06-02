@@ -4,7 +4,7 @@ info:
   name: Otobo - Open Redirect
   author: 0x_Akoko
   severity: medium
-  description: Otobo contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.
+  description: Otobo contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://huntr.dev/bounties/de64ac71-9d06-47cb-b643-891db02f2a1f/
     - https://github.com/rotheross/otobo

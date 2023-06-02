@@ -5,7 +5,7 @@ info:
   author: ritikchaddha
   severity: critical
   description: |
-    FineCMS 5.0.10 contains a SQL injection vulnerability. An attacker can possibly obtain sensitive information from a database, modify data, and execute unauthorized administrative operations in the context of the affected site.
+    FineCMS 5.0.10 contains a SQL injection vulnerability. An attacker can possibly obtain sensitive information from a database modify data and execute unauthorized administrative operations in the context of the affected site.
   reference:
     - https://blog.csdn.net/dfdhxb995397/article/details/101385340
   classification:

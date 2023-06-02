@@ -5,7 +5,7 @@ info:
   author: geeknik
   severity: high
   description: |
-    Ventrilo configuration file was detected, The file discloses the application's Adminpassword and Password.
+    Ventrilo configuration file was detected The file discloses the application's Adminpassword and Password.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
