@@ -5,7 +5,7 @@ info:
   author: ritikchaddha
   severity: info
   description: |
-    PaperCut is a print management system. Log in to manage your print quotas, see your print history and configure your system.
+    PaperCut is a print management system. Log in to manage your print quotas see your print history and configure your system.
   metadata:
     max-request: 1
     verified: "true"

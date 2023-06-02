@@ -5,7 +5,7 @@ info:
   author: 0x_Akoko
   severity: medium
   description: |
-    WordPress WPtouch plugin 3.x contains an open redirect vulnerability. The plugin fails to properly sanitize user-supplied input. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.
+    WordPress WPtouch plugin 3.x contains an open redirect vulnerability. The plugin fails to properly sanitize user-supplied input. An attacker can redirect a user to a malicious site and possibly obtain sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://cxsecurity.com/issue/WLB-2020030114
   classification:

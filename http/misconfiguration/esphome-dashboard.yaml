@@ -5,7 +5,7 @@ info:
   author: ritikchaddha
   severity: medium
   description: |
-    ESPHome Dashboard exposes the secrets like wifi password,api keys and internal logs, it also allows users to make changes through the dashboard.
+    ESPHome Dashboard exposes the secrets like wifi passwordapi keys and internal logs it also allows users to make changes through the dashboard.
   metadata:
     max-request: 1
     verified: true

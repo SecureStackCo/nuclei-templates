@@ -4,7 +4,7 @@ info:
   name: Liferay Login Panel - Detect
   author: organiccrap,dwisiswant0,ricardomaia
   severity: info
-  description: Liferay login panel was detected,
+  description: Liferay login panel was detected
   reference:
     - https://www.liferay.com/
     - https://github.com/mzer0one/CVE-2020-7961-POC

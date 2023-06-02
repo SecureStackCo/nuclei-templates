@@ -4,7 +4,7 @@ info:
   name: GitLab CE/EE Unauthenticated RCE Using ExifTool
   author: pdteam
   severity: critical
-  description: GitLab CE/EE contains a vulnreability which allows a specially crafted image passed to a file parser to perform a command execution attack. Versions impacted are between 11.9-13.8.7, 13.9-13.9.5, and 13.10-13.10.2.
+  description: GitLab CE/EE contains a vulnreability which allows a specially crafted image passed to a file parser to perform a command execution attack. Versions impacted are between 11.9-13.8.7 13.9-13.9.5 and 13.10-13.10.2.
   reference:
     - https://security.humanativaspa.it/gitlab-ce-cve-2021-22205-in-the-wild/
     - https://hackerone.com/reports/1154542

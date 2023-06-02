@@ -4,7 +4,7 @@ info:
   name: Caucho Resin - Information Disclosure
   author: pikpikcu
   severity: info
-  description: Caucho Resin contains an information disclosure vulnerability. The application does not properly sanitize user-supplied input. An attacker can potentially obtain sensitive information, modify data, and/or execute unauthorized administrative operations in the context of the affected site.
+  description: Caucho Resin contains an information disclosure vulnerability. The application does not properly sanitize user-supplied input. An attacker can potentially obtain sensitive information modify data and/or execute unauthorized administrative operations in the context of the affected site.
   reference:
     - https://www.exploit-db.com/exploits/27888
   classification:

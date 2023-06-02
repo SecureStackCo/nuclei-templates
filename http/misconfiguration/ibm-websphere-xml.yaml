@@ -5,7 +5,7 @@ info:
   author: r3nz0
   severity: medium
   description: |
-    Disclose application specific files contained within the war file, including files under the web-inf and meta-inf directories.
+    Disclose application specific files contained within the war file including files under the web-inf and meta-inf directories.
   reference:
     - https://www.acunetix.com/vulnerabilities/web/ibm-websphere-weblogic-application-source-file-exposure/
   metadata:

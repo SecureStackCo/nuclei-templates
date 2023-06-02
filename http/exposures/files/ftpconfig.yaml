@@ -3,7 +3,7 @@ id: ftpconfig
 info:
   name: Atom remote-ssh ftpconfig Exposure
   author: geeknik,DhiyaneshDK
-  description: Created by remote-ssh for Atom, contains SFTP/SSH server details and credentials
+  description: Created by remote-ssh for Atom contains SFTP/SSH server details and credentials
   severity: high
   metadata:
     max-request: 1

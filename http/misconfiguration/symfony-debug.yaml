@@ -4,7 +4,7 @@ info:
   name: Symfony Debug Mode
   author: organiccrap,pdteam
   severity: high
-  description: A Symfony installations 'debug' interface is enabled, allowing the disclosure and possible execution of arbitrary code.
+  description: A Symfony installations 'debug' interface is enabled allowing the disclosure and possible execution of arbitrary code.
   reference:
     - https://github.com/synacktiv/eos
   metadata:

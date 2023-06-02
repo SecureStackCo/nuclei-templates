@@ -5,7 +5,7 @@ info:
   author: shivampand3y
   severity: critical
   description: |
-    AeroCMS 0.0.1 contains a SQL injection vulnerability via the author parameter. An attacker can possibly obtain sensitive information, modify data, and/or execute unauthorized administrative operations in the context of the affected site.
+    AeroCMS 0.0.1 contains a SQL injection vulnerability via the author parameter. An attacker can possibly obtain sensitive information modify data and/or execute unauthorized administrative operations in the context of the affected site.
   reference:
     - https://www.exploit-db.com/exploits/51022
     - https://github.com/MegaTKC/AeroCMS/releases/tag/v0.0.1

@@ -5,7 +5,7 @@ info:
   author: pussycat0x
   severity: info
   description: |
-    Clam AntiVirus is a free software, cross-platform antimalware toolkit able to detect many types of malware, including viruses.
+    Clam AntiVirus is a free software cross-platform antimalware toolkit able to detect many types of malware including viruses.
   metadata:
     max-request: 2
     verified: true

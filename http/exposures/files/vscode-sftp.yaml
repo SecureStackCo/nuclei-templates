@@ -5,7 +5,7 @@ info:
   author: geeknik
   severity: high
   description: |
-    It discloses sensitive files created by vscode-sftp for VSCode, contains SFTP/SSH server details and credentials.
+    It discloses sensitive files created by vscode-sftp for VSCode contains SFTP/SSH server details and credentials.
   metadata:
     max-request: 3
     verified: true

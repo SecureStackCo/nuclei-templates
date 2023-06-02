@@ -4,7 +4,7 @@ info:
   name: IceWarp - Open Redirect
   author: uomogrande
   severity: medium
-  description: IceWarp open redirect vulnerabilities were detected. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.
+  description: IceWarp open redirect vulnerabilities were detected. An attacker can redirect a user to a malicious site and possibly obtain sensitive information modify data and/or execute unauthorized operations.
   remediation: Fixed in 13.0.2.4.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N

@@ -4,7 +4,7 @@ info:
   name: Sensitive Configuration Files Listing - Detect
   author: j33n1k4
   severity: medium
-  description: Listing of sensitive configuration files containing items such as usernames, passwords, and IP addresses was detected.
+  description: Listing of sensitive configuration files containing items such as usernames passwords and IP addresses was detected.
   reference:
     - https://www.exploit-db.com/ghdb/7014
   classification:

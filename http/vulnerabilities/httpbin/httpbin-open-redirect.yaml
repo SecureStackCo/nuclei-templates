@@ -4,7 +4,7 @@ info:
   name: HTTPBin - Open Redirect
   author: Adam Crosser
   severity: medium
-  description: HTTPBin contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.
+  description: HTTPBin contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://github.com/postmanlabs/httpbin
   classification:

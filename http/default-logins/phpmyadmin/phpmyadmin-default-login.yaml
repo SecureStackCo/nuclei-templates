@@ -4,7 +4,7 @@ info:
   name: phpMyAdmin - Default Login
   author: Natto97
   severity: high
-  description: phpMyAdmin contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information, modify data, and/or execute unauthorized operations.
+  description: phpMyAdmin contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://www.phpmyadmin.net
   classification:

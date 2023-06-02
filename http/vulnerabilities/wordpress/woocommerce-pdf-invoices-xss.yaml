@@ -4,7 +4,7 @@ info:
   name: WordPress WooCommerce PDF Invoices & Packing Slips <2.15.0 - Cross-Site Scripting
   author: Akincibor
   severity: medium
-  description: WordPress WooCommerce PDF Invoices & Packing Slips 2.15.0 does not escape some URLs before outputting them in attributes, leading to reflected cross-site scripting.
+  description: WordPress WooCommerce PDF Invoices & Packing Slips 2.15.0 does not escape some URLs before outputting them in attributes leading to reflected cross-site scripting.
   reference:
     - https://wpscan.com/vulnerability/bc05dde0-98a2-46e3-b2c8-7bdc8c32394b
     - https://wordpress.org/plugins/woocommerce-pdf-invoices-packing-slips/

@@ -8,7 +8,7 @@ info:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
     cwe-id: CWE-200
-  description: Ruby on Rails database configuration file was detected, which may contain database credentials.
+  description: Ruby on Rails database configuration file was detected which may contain database credentials.
   reference: https://guides.rubyonrails.org/configuring.html#configuring-a-database
   tags: config,exposure,rails
   metadata:

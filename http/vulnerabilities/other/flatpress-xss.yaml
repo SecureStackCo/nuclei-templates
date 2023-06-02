@@ -5,7 +5,7 @@ info:
   author: arafatansari
   severity: medium
   description: |
-    FlatPress 1.2.1 contains a stored cross-site scripting vulnerability that allows for arbitrary execution of JavaScript commands through blog content. An attacker can steal cookie-based authentication credentials and launch other attacks. Note: this is similar to CVE-2021-41432, however this attack uses the "page" parameter.
+    FlatPress 1.2.1 contains a stored cross-site scripting vulnerability that allows for arbitrary execution of JavaScript commands through blog content. An attacker can steal cookie-based authentication credentials and launch other attacks. Note: this is similar to CVE-2021-41432 however this attack uses the "page" parameter.
   reference:
     - https://github.com/flatpressblog/flatpress/issues/153
   classification:

@@ -4,7 +4,7 @@ info:
   name: Spring Boot Actuator - Heap Dump Detection
   author: that_juan_,dwisiswant0,wdahlenb
   severity: critical
-  description: A Spring Boot Actuator heap dump was detected. A heap dump is a snapshot of JVM memory, which could expose environment variables and HTTP requests.
+  description: A Spring Boot Actuator heap dump was detected. A heap dump is a snapshot of JVM memory which could expose environment variables and HTTP requests.
   reference:
     - https://github.com/pyn3rd/Spring-Boot-Vulnerability
   tags: springboot,exposure

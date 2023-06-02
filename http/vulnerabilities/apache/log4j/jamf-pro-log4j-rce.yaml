@@ -5,7 +5,7 @@ info:
   author: DhiyaneshDK,pdteam
   severity: critical
   description: |
-    JamF is susceptible to Lof4j JNDI remote code execution. JamF is the industry standard when it comes to the management of iOS devices (iPhones and iPads), macOS computers (MacBooks, iMacs, etc.), and tvOS devices (Apple TV).
+    JamF is susceptible to Lof4j JNDI remote code execution. JamF is the industry standard when it comes to the management of iOS devices (iPhones and iPads) macOS computers (MacBooks iMacs etc.) and tvOS devices (Apple TV).
   reference:
     - https://github.com/random-robbie/jamf-log4j
     - https://docs.jamf.com/technical-articles/Mitigating_the_Apache_Log4j_2_Vulnerability.html

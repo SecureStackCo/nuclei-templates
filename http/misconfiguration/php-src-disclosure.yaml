@@ -5,7 +5,7 @@ info:
   author: pdteam
   severity: high
   description: |
-    A source code disclosure vulnerability in a web server caused by improper handling of multiple requests in quick succession, leading to the server treating requested files as static files instead of executing scripts.
+    A source code disclosure vulnerability in a web server caused by improper handling of multiple requests in quick succession leading to the server treating requested files as static files instead of executing scripts.
   reference:
     - https://blog.projectdiscovery.io/php-http-server-source-disclosure/
   classification:

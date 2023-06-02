@@ -4,7 +4,7 @@ info:
   name: Linux - Local File Inclusion Fuzzing
   author: geeknik,unstabl3,pentest_swissky,sushantkamble,0xSmiley
   severity: high
-  description: Multiple fuzzes for /etc/passwd on passed URLs were conducted, leading to multiple instances of local file inclusion vulnerability.
+  description: Multiple fuzzes for /etc/passwd on passed URLs were conducted leading to multiple instances of local file inclusion vulnerability.
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5

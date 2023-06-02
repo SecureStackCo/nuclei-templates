@@ -5,7 +5,7 @@ info:
   author: pussycat0x
   severity: info
   description: |
-    Telnet is a network protocol used to virtually access a computer and to provide a two-way, collaborative and text-based communication channel between two machines.
+    Telnet is a network protocol used to virtually access a computer and to provide a two-way collaborative and text-based communication channel between two machines.
   metadata:
     max-request: 2
     verified: true

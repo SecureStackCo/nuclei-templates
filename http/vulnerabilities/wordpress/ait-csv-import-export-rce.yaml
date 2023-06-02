@@ -5,7 +5,7 @@ info:
   author: gy741
   severity: critical
   description: |
-    The AIT CSV Import/Export plugin <= 3.0.3 allows unauthenticated remote attackers to upload and execute arbitrary PHP code. The upload-handler does not require authentication, nor validates the uploaded content.
+    The AIT CSV Import/Export plugin <= 3.0.3 allows unauthenticated remote attackers to upload and execute arbitrary PHP code. The upload-handler does not require authentication nor validates the uploaded content.
   reference:
     - https://wpscan.com/vulnerability/10471
     - https://github.com/rapid7/metasploit-framework/blob/master//modules/exploits/multi/http/wp_ait_csv_rce.rb

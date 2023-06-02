@@ -5,7 +5,7 @@ info:
   author: gtrrnr,metascan
   severity: high
   description: |
-    Trassir WebView contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information, modify data, and/or execute unauthorized operations.
+    Trassir WebView contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://confluence.trassir.com/display/TKB/How+to+reset+the+administrator+password+on+the+TRASSIR+NVR
   classification:

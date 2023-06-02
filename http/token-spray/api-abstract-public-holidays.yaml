@@ -4,7 +4,7 @@ info:
   name: Abstract Api Public Holidays Test
   author: daffainfo
   severity: info
-  description: Data on national, regional, and religious holidays via API
+  description: Data on national regional and religious holidays via API
   reference:
     - https://www.abstractapi.com/api/holidays-api
     - https://github.com/daffainfo/all-about-apikey/tree/main/abstract-public-holidays

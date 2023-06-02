@@ -5,7 +5,7 @@ info:
   author: princechaddha
   severity: high
   description: |
-    Sites hosted by Global Domains International, Inc. have cross-site scripting and directory traversal vulnerabilities.
+    Sites hosted by Global Domains International Inc. have cross-site scripting and directory traversal vulnerabilities.
   reference:
     - https://cxsecurity.com/issue/WLB-2018020247
     - https://packetstormsecurity.com/files/126545/Global-Domains-International-Cross-Site-Scripting-Traversal.html

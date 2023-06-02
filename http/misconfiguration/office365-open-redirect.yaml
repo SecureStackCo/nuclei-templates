@@ -4,7 +4,7 @@ info:
   name: Office365 Autodiscover - Open Redirect
   author: dhiyaneshDk
   severity: medium
-  description: Office365 Autodiscover contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information, modify data, and/or execute unauthorized operations.
+  description: Office365 Autodiscover contains an open redirect vulnerability. An attacker can redirect a user to a malicious site and possibly obtain sensitive information modify data and/or execute unauthorized operations.
   remediation: See the workaround detailed in the Medium post in the references.
   reference:
     - https://medium.com/@heinjame/office365-open-redirect-from-autodiscover-64284d26c168

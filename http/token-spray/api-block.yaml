@@ -4,7 +4,7 @@ info:
   name: block.io API Test
   author: daffainfo
   severity: info
-  description: Bitcoin Payment, Wallet & Transaction Data
+  description: Bitcoin Payment Wallet & Transaction Data
   reference:
     - https://block.io/docs/basic
     - https://github.com/daffainfo/all-about-apikey/tree/main/block

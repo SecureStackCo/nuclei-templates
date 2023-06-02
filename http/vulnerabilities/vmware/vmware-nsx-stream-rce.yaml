@@ -7,7 +7,7 @@ info:
   description: |
     VMware Cloud Foundation (NSX-V) contains a remote code execution vulnerability via XStream open source library.
     VMware has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8.
-    Due to an unauthenticated endpoint that leverages XStream for input serialization in VMware Cloud Foundation (NSX-V),
+    Due to an unauthenticated endpoint that leverages XStream for input serialization in VMware Cloud Foundation (NSX-V)
     a malicious actor can get remote code execution in the context of 'root' on the appliance.
     VMware Cloud Foundation 3.x and more specific NSX Manager Data Center for vSphere up to and including version 6.4.13
     are vulnerable to Remote Command Injection.

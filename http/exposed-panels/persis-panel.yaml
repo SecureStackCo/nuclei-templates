@@ -4,7 +4,7 @@ info:
   name: Persis Panel - Detect
   author: righettod
   severity: info
-  description: Persis panel was detected,
+  description: Persis panel was detected
   reference:
     - https://www.persis.de/
   classification:

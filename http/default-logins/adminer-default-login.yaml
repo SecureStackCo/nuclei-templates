@@ -5,7 +5,7 @@ info:
   author: j4vaovo
   severity: high
   description: |
-    Adminer contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information, modify data, and/or execute unauthorized operations.
+    Adminer contains a default login vulnerability. An attacker can obtain access to user accounts and access sensitive information modify data and/or execute unauthorized operations.
   reference:
     - https://www.adminer.org
   classification:

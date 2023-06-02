@@ -5,7 +5,7 @@ info:
   author: johnk3r
   severity: critical
   description: |
-    VMware Horizon is susceptible to remote code execution via the Apache Log4j framework. An attacker can execute malware, obtain sensitive information, modify data, and/or gain full control over a compromised system without entering necessary credentials.
+    VMware Horizon is susceptible to remote code execution via the Apache Log4j framework. An attacker can execute malware obtain sensitive information modify data and/or gain full control over a compromised system without entering necessary credentials.
   reference:
     - https://attackerkb.com/topics/in9sPR2Bzt/cve-2021-44228-log4shell/rapid7-analysis
     - https://www.vmware.com/security/advisories/VMSA-2021-0028.html

@@ -5,7 +5,7 @@ info:
   author: pussycat0x
   severity: info
   description: |
-    Dropbear is a software package written by Matt Johnston that provides a Secure Shell-compatible server and client. It is designed as a replacement for standard OpenSSH for environments with low memory and processor resources, such as embedded systems
+    Dropbear is a software package written by Matt Johnston that provides a Secure Shell-compatible server and client. It is designed as a replacement for standard OpenSSH for environments with low memory and processor resources such as embedded systems
   metadata:
     max-request: 2
     verified: true

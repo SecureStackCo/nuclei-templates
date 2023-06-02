@@ -4,7 +4,7 @@ info:
   name: PHP Timeclock <=1.04 - Cross-Site Scripting
   author: pikpikcu
   severity: high
-  description: PHP Timeclock 1.04 and prior contains multiple cross-site scripting vulnerabilities via login.php, timeclock.php, reports/audit.php. and reports/timerpt.php
+  description: PHP Timeclock 1.04 and prior contains multiple cross-site scripting vulnerabilities via login.php timeclock.php reports/audit.php. and reports/timerpt.php
   reference:
     - https://www.exploit-db.com/exploits/49853
   classification:

@@ -4,7 +4,7 @@ info:
   name: Sensitive Storage Data - Detect
   author: pussycat0x
   severity: medium
-  description: A generic search for 'storage' in sensitive key files, file names, logs, etc., returned a match.
+  description: A generic search for 'storage' in sensitive key files file names logs etc. returned a match.
   reference:
     - https://www.exploit-db.com/ghdb/6304
   classification:

@@ -5,7 +5,7 @@ info:
   author: ptonewreckin,danigoland,geeknik
   severity: high
   description: |
-    Magento configuration panel was detected. Misconfigured instances of Magento may disclose usernames, passwords, and database configurations via /app/etc/local.xml.
+    Magento configuration panel was detected. Misconfigured instances of Magento may disclose usernames passwords and database configurations via /app/etc/local.xml.
   reference:
     - https://github.com/ptonewreckin/cmsDetector/blob/master/signatures/magento.py
   classification:
