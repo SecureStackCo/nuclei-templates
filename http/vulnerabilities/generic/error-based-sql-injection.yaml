@@ -5,6 +5,9 @@ info:
   author: geeknik
   severity: critical
   description: Detects potential SQL injection via error strings in 29 database engines. Inspired by https://github.com/sqlmapproject/sqlmap/blob/master/data/xml/errors.xml.
+  reference:
+    - https://www.geeksforgeeks.org/error-based-sql-injections/
+    - https://medium.com/@hninja049/example-of-a-error-based-sql-injection-dce72530271c
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
     cvss-score: 9.8
@@ -482,3 +485,4 @@ http:
           - "\\[(Virtuoso Driver|Virtuoso iODBC Driver)\\]\\[Virtuoso Server\\]"
 
 # Enhanced by CS 03/27/2023
+# Enhanced by 6mile 06/06/2023
