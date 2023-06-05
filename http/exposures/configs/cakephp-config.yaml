@@ -3,7 +3,7 @@ id: cakephp-config
 info:
   name: CakePHP Configuration File - Detect
   author: DhiyaneshDk
-  severity: medium
+  severity: high
   description: CakePHP configuration file was detected.
   reference:
     - https://book.cakephp.org/phinx/0/en/configuration.html
@@ -31,7 +31,9 @@ http:
         words:
           - "host:"
           - "name:"
+          - "user:"
           - "pass:"
+          - "port:"
         condition: and
 
       - type: status
@@ -39,3 +41,5 @@ http:
           - 200
 
 # Enhanced by md on 2023/02/08
+# Enhanced by 6mile on 2023/06/05
+
