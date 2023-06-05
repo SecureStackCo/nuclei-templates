@@ -4,7 +4,7 @@ info:
   name: AWS bucket with Object listing
   author: pdteam
   severity: low
-  description: The S3 bucket hosting this web page is incorrectly configured to allow object listing by default. Unless this behaviour is specifically required, you should disable public access in both the S3 service and Cloudfront if you are using it. 
+  description: The S3 bucket hosting this web page is incorrectly configured to allow object listing by default. Unless this behaviour is specifically required you should disable public access in both the S3 service and Cloudfront if you are using it. 
   reference:
     - https://mikey96.medium.com/cloud-based-storage-misconfigurations-critical-bounties-361647f78a29
     - https://repost.aws/knowledge-center/s3-returns-objects
