@@ -1,10 +1,10 @@
 id: cakephp-config
 
 info:
-  name: CakePHP Configuration File - Detect
+  name: CakePHP Phinx Config File - Detect
   author: DhiyaneshDk
   severity: high
-  description: CakePHP configuration file was detected.
+  description: CakePHP Phinx configuration file is exposed.  Phinx is a tool that allows developers to easily create database migrations in PHP.  Because of this highly sensitive database work Phinx needs database access and those parameters including username password host and other important variables are commonly kept in this file.
   reference:
     - https://book.cakephp.org/phinx/0/en/configuration.html
   classification:
