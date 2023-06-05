@@ -4,7 +4,7 @@ info:
   name: Open Redirect - Detection
   author: afaq,melbadry9,Elmahdi,pxmme1337,Regala_,andirrahmani1,geeknik
   severity: medium
-  description: An open redirect vulnerability was detected. An HTTP parameter may contain a URL value that can cause the web application to redirect the request to the specified URL. If an attacker modifies the URL value to a malicious site, they can launch a phishing scam and steal user credentials. The modified link's server name is identical to the original site, making phishing attempts appear more trustworthy.
+  description: An open redirect vulnerability was detected. An HTTP parameter may contain a URL value that can cause the web application to redirect the request to the specified URL. If an attacker modifies the URL value to a malicious site they can launch a phishing scam and steal user credentials. The modified link's server name is identical to the original site making phishing attempts appear more trustworthy.
   reference:
     - https://cwe.mitre.org/data/definitions/601.html
     - https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/ca3007
