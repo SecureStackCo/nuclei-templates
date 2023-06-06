@@ -1,7 +1,7 @@
 id: npmrc-authtoken
 
 info:
-  name: Hardcoded .npmrc AuthToken
+  name: NPM RC Configuration Exposed in Target
   author: geeknik
   severity: high
   description: .npmrc files typically store NPM auth tokens which allow API access to the NPM platform.  Exposing these files can give attackers the ability to list and delete and even publish new packages.  Additionally NPM ignores MFA for automation tokens so MFA will be ignored.

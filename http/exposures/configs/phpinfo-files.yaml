@@ -1,7 +1,7 @@
 id: phpinfo-files
 
 info:
-  name: PHPinfo Page - Detect
+  name: PHPinfo Page is Exposed in Target
   author: pdteam,daffainfo,meme-lord,dhiyaneshDK,wabafet
   severity: low
   description: |
@@ -60,3 +60,4 @@ http:
           - '>PHP Version <\/td><td class="v">([0-9.]+)'
 
 # Enhanced by md on 2023/02/22
+# Enhanced by 6mile on 2023/06/06
