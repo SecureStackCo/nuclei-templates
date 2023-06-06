@@ -1,7 +1,7 @@
 id: npm-debug-log
 
 info:
-  name: NPM Debug Log Disclosure
+  name: NPM Debug Log is Exposed
   author: Hardik-Solanki
   severity: high
   description: A NPM log file (npm-debug.log) is publicly accessible in the web application. This log file can contain potentially sensitive data and should NOT be exposed publicly.

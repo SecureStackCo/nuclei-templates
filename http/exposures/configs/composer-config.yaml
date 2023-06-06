@@ -1,7 +1,7 @@
 id: composer-config
 
 info:
-  name: Composer Config - Detect
+  name: Composer Config is Exposed
   author: Mahendra Purbia (Mah3Sec_)
   severity: medium
   description: Composer configuration file detected.

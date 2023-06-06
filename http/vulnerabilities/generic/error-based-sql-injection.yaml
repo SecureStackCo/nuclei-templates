@@ -1,7 +1,7 @@
 id: error-based-sql-injection
 
 info:
-  name: Error Based SQL Injection
+  name: Error-Based SQL Injection Confirmed
   author: geeknik
   severity: critical
   description: Error-based SQLi is an in-band SQL injection technique that relies on error messages thrown by the database server to obtain information about the structure of the database. In some cases error-based SQL injection alone is enough for an attacker to enumerate an entire database. This detection will identify SQLi in 30 different database engines. 
