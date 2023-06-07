@@ -12,7 +12,7 @@ info:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N
     cvss-score: 6.1
     cwe-id: CWE-601
-  tags: redirect,generic
+  tags: redirect,generic,paulsfavorites
   metadata:
     max-request: 92
 
@@ -111,6 +111,7 @@ http:
         - 'ーevil.com'
         - 'ｰevil.com'
         - 'redirect/evil.com'
+        - 'redirect?targeturl=https://evil.com'
         - 'cgi-bin/redirect.cgi?evil.com'
         - 'out?evil.com'
         - 'login?to=http://evil.com'
@@ -133,4 +134,4 @@ http:
         condition: or
 
 # Enhanced by mp on 2022/10/14
-# Enhanced by 6mile on 2023/06/06
+# Enhanced by 6mile on 2023/06/07
