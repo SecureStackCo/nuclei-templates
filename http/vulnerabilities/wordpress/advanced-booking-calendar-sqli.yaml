@@ -10,8 +10,10 @@ info:
   reference:
     - https://wpscan.com/vulnerability/bac7b590-70de-45b3-bdc2-19f90524ca39
     - https://wordpress.org/plugins/advanced-booking-calendar/
+  remediation: Fixed in version 1.6.2
   metadata:
-    verified: "true"
+    max-request: 1
+    verified: true
   tags: sqli,wpscan,wordpress,wp-plugin,wp,advanced-booking-calendar,unauthenticated
 
 http:
