@@ -4,6 +4,7 @@ info:
   name: Mismatched SSL Certificate
   author: pdteam
   severity: low
+  description: This occurs when the common name to which an SSL Certificate is issued (e.g. www.example.com) does not exactly match the name displayed in the URL bar. Any difference will cause the web browser to halt and display a name mismatch error. This error can occur even if the correct certificate is properly installed.
   reference:
     - https://www.invicti.com/web-vulnerability-scanner/vulnerabilities/ssl-certificate-name-hostname-mismatch/
   tags: ssl,mismatched,tls
