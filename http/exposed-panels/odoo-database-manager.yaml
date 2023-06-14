@@ -4,7 +4,9 @@ info:
   name: Odoo - Database Manager Discovery
   author: __Fazal,R3dg33k
   severity: critical
-  description: Odoo database manager was discovered.
+  description: Odoo database manager is accessible to the public internet.  This database manager allows you to perform administrative functions like delete the datbase, change the master password, and backup or duplicate database contents.
+  reference:
+    - https://www.odoo.com/documentation/16.0/administration/install/deploy.html#database-manager-security
   metadata:
     max-request: 1
     verified: true
