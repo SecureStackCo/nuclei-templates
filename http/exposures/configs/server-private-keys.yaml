@@ -3,7 +3,7 @@ id: server-private-keys
 info:
   name: SSL/SSH/TLS/JWT Keys - Detect
   author: geeknik,R12W4N
-  severity: high
+  severity: critical
   classification:
     cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
     cvss-score: 7.5
