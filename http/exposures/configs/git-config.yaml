@@ -2,8 +2,8 @@ id: git-config
 
 info:
   name: Git Configuration Files Exposed in Target
-  author: pdteam,pikpikcu,Mah3Sec_
-  severity: medium
+  author: pdteam,pikpikcu,Mah3Sec_,m4lwhere
+  severity: high
   description: Git configuration file was detected in the URL path.  This file typically exposed git username and customizations.  Less typically it will include actual git credentials embedded in the file.  In either case its bad practice to expose this file in web apps.
   reference:
     - https://infosecwriteups.com/exposed-git-directory-exploitation-3e30481e8d75
@@ -23,8 +23,11 @@ http:
     matchers-condition: and
     matchers:
       - type: word
+        part: body
         words:
+          - "[credentials]"
           - "[core]"
+        condition: or
 
       - type: dsl
         dsl:
@@ -36,4 +39,11 @@ http:
         status:
           - 200
 
-# Enhanced by md on 2023/02/09
+    extractors:
+      - type: regex
+        part: body
+        group: 1
+        regex:
+          - "url ?= ?https?://(.*:.*)@"
+          - "AUTHORIZATION: basic (.*)"
+          - "pass = (.*)"

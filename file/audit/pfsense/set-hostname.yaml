@@ -1,7 +1,7 @@
 id: set-hostname
 
 info:
-  name: Ensure Hostname is Set
+  name: PfSence Hostname Not Set - Detect
   author: pussycat0x
   severity: info
   description: |
@@ -9,6 +9,10 @@ info:
     The hostname is a unique identifier for the device and it is important that it is properly set so that other devices on the network can identify it.
   reference: |
     https://docs.netgate.com/pfsense/en/latest/config/general.html
+  classification:
+    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
+    cvss-score: 0.0
+    cwe-id: CWE-200
   tags: firewall,config,audit,pfsense,file
 
 file:
@@ -23,3 +27,5 @@ file:
           - "<hostname></hostname>"
           - "domain>"
         condition: and
+
+# Enhanced by md on 2023/05/04
