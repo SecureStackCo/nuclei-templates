@@ -1,0 +1,42 @@
+id: aws-codebuild-detect
+
+info:
+  name: AWS Codebuild Detect
+  author: 6mile SecureStack
+  severity: info
+  metadata:
+    max-request: 1
+    verified: true
+    shodan-query:
+      - X-Amz-Meta-Codebuild-Content-Sha256:
+      - X-Amz-Meta-Codebuild-Buildarn:
+      - X-Amz-Meta-Codebuild-Content-Md5:
+  tags: tech,aws,codebuild,amazon,git
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+    matchers-condition: or
+
+    matchers:
+      - type: word
+        name: Codebuild in value
+        part: header
+        condition: or
+        words:
+          - "arn: arn:aws:codebuild"
+
+      - type: word
+        name: Codebuild via header
+        words:
+          - 'X-Amz-Meta-Codebuild-Buildarn:'
+          - 'x-amz-meta-codebuild-buildarn:'
+          - 'X-Amz-Meta-Codebuild-Content-Sha256:'
+          - 'x-amz-meta-codebuild-content-sha256:'
+          - 'X-Amz-Meta-Codebuild-Content-Md5:'
+          - 'x-amz-meta-codebuild-content-md5:'
+        part: header
