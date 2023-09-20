@@ -14,3 +14,11 @@ fi
 ssfastnumb=$(find ./ -name "*.yaml" | xargs grep -si "securestack-fast" | wc -l | tr -d ' ')
 
 echo "Number of securestack-fast tagged templates = $ssfastnumb"
+echo
+echo "Testing for merge conflict remnants.... "
+#find ./ -name "*.yaml" | xargs grep -siE '===========================|<<<<|>>>>'
+if [[ -n $(find ./ -name "*.yaml" | xargs grep -siE '===========================|<<<<|>>>>') ]]; then 
+	echo "MERGE CONFLICT REMNANTS FOUND!"
+	find ./ -name "*.yaml" | xargs grep -siE '===========================|<<<<|>>>>'
+else echo "No merge conflicts"
+fi
