@@ -5,12 +5,12 @@
 # changed the severity as well.  Typically, we've changed some of the file exposures from infos to mediums, and occasionally
 # highs.  
 
-if [[ $(find ./ -name "*.yaml" | xargs grep "description:" | grep ',') == "0" ]]; then 
+if [[ $(find ./ -name "*.yaml" | xargs grep -si "description:" | grep ',') == "0" ]]; then 
 	echo "Found commas in at least one description value";
 	exit 1;
 else echo "No commas found!";
 fi
 
-ssfastnumb=$(find ./ -name "*.yaml" | xargs grep "securestack-fast" | wc -l | tr -d ' ')
+ssfastnumb=$(find ./ -name "*.yaml" | xargs grep -si "securestack-fast" | wc -l | tr -d ' ')
 
 echo "Number of securestack-fast tagged templates = $ssfastnumb"
