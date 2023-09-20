@@ -3706,9 +3706,7 @@ http:
           - "uvicorn"
 
       - type: word
-        name: codebuild
-        part: header
+        name: istio-envoy
+        part: server
         words:
-          - "x-amz-meta-codebuild-content-md5:"
-          - "x-amz-meta-codebuild-buildarn:"
-          - "x-amz-meta-codebuild-content-sha256:"
+          - "istio-envoy"
