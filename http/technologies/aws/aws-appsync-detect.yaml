@@ -29,10 +29,10 @@ http:
         part: body
         condition: or
         words:
-          - 'aws_appsync_authenticationType'
-          - 'aws_appsync_graphqlEndpoint'
-          - 'aws_appsync_apiKey'
-          - 'aws_appsync_region'
+          - 'aws_appsync_authenticationType:'
+          - 'aws_appsync_graphqlEndpoint:'
+          - 'aws_appsync_apiKey:'
+          - 'aws_appsync_region:'
 
       - type: word
         name: AppSync via header
@@ -41,4 +41,11 @@ http:
           - 'aws_appsync_graphqlEndpoint:'
           - 'aws_appsync_apiKey:'
           - 'aws_appsync_region:'
+        part: header
+
+      - type: word
+        name: AppSync via error
+        words:
+          - 'x-amzn-errortype: UnknownOperationException'
+          - 'x-amzn-errortype: ForbiddenException'
         part: header

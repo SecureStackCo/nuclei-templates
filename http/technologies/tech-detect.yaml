@@ -3704,3 +3704,11 @@ http:
         part: server
         words:
           - "uvicorn"
+
+      - type: word
+        name: codebuild
+        part: header
+        words:
+          - "x-amz-meta-codebuild-content-md5:"
+          - "x-amz-meta-codebuild-buildarn:"
+          - "x-amz-meta-codebuild-content-sha256:"
