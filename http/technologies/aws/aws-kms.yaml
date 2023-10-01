@@ -1,0 +1,26 @@
+id: aws-kms-detect
+
+info:
+  name: AWS KMS Detect
+  author: 6mile SecureStack
+  severity: info
+  metadata:
+    max-request: 3
+    verified: true
+    shodan-query:
+      - x-amz-server-side-encryption:
+  tags: tech,aws,kms,amazon
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+   # matchers-condition: or
+
+    matchers:
+      - type: word
+        #name: AWS KMS via header
+        words:
+          - 'X-Amz-Server-Side-Encryption:'
+        part: header

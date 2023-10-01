@@ -1,0 +1,28 @@
+id: aws-cloudfront-detect
+
+info:
+  name: AWS Cloudfront Detect
+  author: 6mile SecureStack
+  severity: info
+  metadata:
+    max-request: 3
+    verified: true
+    shodan-query:
+      - x-amz-cf-pop:
+      - x-amz-cf-id:
+  tags: tech,aws,kms,amazon
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+   # matchers-condition: or
+
+    matchers:
+      - type: word
+        #name: AWS Cloudfront via header
+        words:
+          - 'X-Amz-Cf-Id:'
+          - 'X-Amz-Cf-Pop:'
+        part: header
