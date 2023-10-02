@@ -1,7 +1,7 @@
 # This Nuclei template is a comprehensive way to identify if an application 
 # is hosted in AWS or consuming AWS services. It checks for the existance of 
-# AWS itself, as well as several services: alb, ec2, kms, xray, waf, s3, 
-# codebuild, appsync, cloudfront, api-gateway, elastic-beanstalk
+# AWS itself, as well as several services: 
+# ALB, KMS, Xray, WAF, Codebuild, AppSync, Cloudfront, and API-Gateway
 
 id: aws-detect
 
@@ -14,7 +14,7 @@ info:
     - https://github.com/0x727/FingerprintHub
   classification:
     cwe-id: CWE-200
-  tags: tech,aws,amazon,graphql,appsync,s3,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
+  tags: tech,aws,amazon,graphql,appsync,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
   metadata:
     max-request: 1
 
