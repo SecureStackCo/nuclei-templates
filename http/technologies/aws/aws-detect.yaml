@@ -46,6 +46,8 @@ http:
           - 'X-Amzn-Trace-Id:'
           - 'X-Amz-Version-Id:'
           - 'X-Amzn-Waf-Action:'
+          - 'X-Amz-Id-2:'
+          - 'X-Amz-Delete-Marker:'
 
       - type: word
         condition: or
