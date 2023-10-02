@@ -1,0 +1,43 @@
+id: aws-detect
+
+info:
+  name: AWS Detect
+  author: 6mile
+  severity: info
+  description: Detect if AWS is being used in this target application
+  reference:
+    - https://github.com/0x727/FingerprintHub
+  classification:
+    cwe-id: CWE-200
+  tags: tech,aws,amazon
+  metadata:
+    max-request: 1
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: or
+    matchers:
+
+      - type: word
+        condition: or
+        name: AWS Detected
+        part: header
+        words:
+          - 'X-Amz-Cf-Id:'
+          - 'X-Amz-Cf-Pop:'
+          - 'Server: awselb/2.0'
+          - 'X-Amz-Server-Side-Encryption:'
+          - 'X-Amzn-Requestid:'
+          - 'X-Amzn-Errortype:'
+          - 'X-Amz-Apigw-Id:'
+          - 'X-Amz-Content-Sha256:'
+          - 'X-Amz-Date:'
+          - 'X-Amzn-Trace-Id:'
+          - 'X-Amz-Version-Id:'
+          - 'X-Amzn-Waf-Action:'
