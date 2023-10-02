@@ -73,14 +73,8 @@ http:
       - type: word
         name: aws-codebuild
         part: header
-        condition: or
         words:
           - "arn: arn:aws:codebuild"
-
-      - type: word
-        name: aws-codebuild
-        part: header
-        words:
           - 'X-Amz-Meta-Codebuild-Buildarn:'
           - 'x-amz-meta-codebuild-buildarn:'
           - 'X-Amz-Meta-Codebuild-Content-Sha256:'
