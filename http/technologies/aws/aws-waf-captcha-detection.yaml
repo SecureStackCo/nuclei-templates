@@ -1,0 +1,26 @@
+id: aws-waf-captcha-detect
+
+info:
+  name: AWS WAF Captcha Detect
+  author: 6mile SecureStack
+  severity: info
+  metadata:
+    max-request: 3
+   #verified: true
+   #shodan-query:
+   #  - x-amzn-waf-action:
+  tags: tech,aws,kms,amazon
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+   # matchers-condition: or
+
+    matchers:
+      - type: word
+        #name: AWS WAF Captcha
+        words:
+          - 'X-Amzn-Waf-Action:'
+        part: header
