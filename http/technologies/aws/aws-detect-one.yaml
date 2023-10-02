@@ -1,7 +1,7 @@
 # This Nuclei template is a comprehensive way to identify if an application 
 # is hosted in AWS or consuming AWS services. It checks for the existance of 
 # AWS itself, as well as several services: alb, ec2, kms, xray, waf, s3, 
-# codebuild, appsync, cloudfront and api gateway
+# codebuild, appsync, cloudfront, api-gateway, elastic-beanstalk
 
 id: aws-detect
 
@@ -31,7 +31,7 @@ http:
 
       - type: word
         condition: or
-        name: aws
+        #name: Main AWS Detection template
         part: header
         words:
           - 'X-Amz-Cf-Id:'
@@ -60,6 +60,15 @@ http:
         words:
           - 'X-Amz-Cf-Id:'
           - 'X-Amz-Cf-Pop:'
+
+      - type: dsl
+        name: aws-cloudfront
+        condition: or
+        dsl:
+          - "contains(tolower(header), 'x-cache: hit from cloudfront')"
+          - "contains(tolower(header), 'x-cache: refreshhit from cloudfront')"
+          - "contains(tolower(header), 'x-cache: miss from cloudfront')"
+          - "contains(tolower(header), 'x-cache: error from cloudfront')"
 
       - type: word
         name: aws-codebuild
@@ -118,4 +127,16 @@ http:
         words:
           - 'X-Amzn-Waf-Action:'
 
+      - type: word
+        name: aws-ec2
+        part: header
+        words:
+          - "Server: EC2ws"
+
+      - type: word
+        name: aws-elastic-beanstalk
+        words:
+          - '<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>'
+          - '<li><a href="http://docs.amazonwebservices.com/elasticbeanstalk/latest/dg/">AWS Elastic Beanstalk overview</a></li>'
+        condition: or
 
