@@ -1,0 +1,121 @@
+# This Nuclei template is a comprehensive way to identify if an application 
+# is hosted in AWS or consuming AWS services. It checks for the existance of 
+# AWS itself, as well as several services: alb, ec2, kms, xray, waf, s3, 
+# codebuild, appsync, cloudfront and api gateway
+
+id: aws-detect
+
+info:
+  name: AWS Detect
+  author: 6mile
+  severity: info
+  description: Detect if AWS is being used in this target application
+  reference:
+    - https://github.com/0x727/FingerprintHub
+  classification:
+    cwe-id: CWE-200
+  tags: tech,aws,amazon,graphql,appsync,s3,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
+  metadata:
+    max-request: 1
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: or
+    matchers:
+
+      - type: word
+        condition: or
+        name: aws
+        part: header
+        words:
+          - 'X-Amz-Cf-Id:'
+          - 'X-Amz-Cf-Pop:'
+          - 'Server: awselb/2.0'
+          - 'X-Amz-Server-Side-Encryption:'
+          - 'X-Amzn-Requestid:'
+          - 'X-Amzn-Errortype:'
+          - 'X-Amz-Apigw-Id:'
+          - 'X-Amz-Content-Sha256:'
+          - 'X-Amz-Date:'
+          - 'X-Amzn-Trace-Id:'
+          - 'X-Amz-Version-Id:'
+          - 'X-Amzn-Waf-Action:'
+
+      - type: word
+        condition: or
+        name: aws-alb
+        part: header
+        words:
+          - 'Server: awselb/2.0'
+
+      - type: word
+        name: aws-cloudfront
+        part: header
+        words:
+          - 'X-Amz-Cf-Id:'
+          - 'X-Amz-Cf-Pop:'
+
+      - type: word
+        name: aws-codebuild
+        part: header
+        condition: or
+        words:
+          - "arn: arn:aws:codebuild"
+
+      - type: word
+        name: aws-codebuild
+        part: header
+        words:
+          - 'X-Amz-Meta-Codebuild-Buildarn:'
+          - 'x-amz-meta-codebuild-buildarn:'
+          - 'X-Amz-Meta-Codebuild-Content-Sha256:'
+          - 'x-amz-meta-codebuild-content-sha256:'
+          - 'X-Amz-Meta-Codebuild-Content-Md5:'
+          - 'x-amz-meta-codebuild-content-md5:'
+
+      - type: dsl
+        name: aws-s3
+        dsl:
+          - contains(tolower(header), 'x-amz-bucket')
+          - contains(tolower(header), 'x-amz-request')
+          - contains(tolower(header), 'x-amz-id')
+          - contains(tolower(header), 'amazons3')
+        condition: or
+
+      - type: dsl
+        name: aws-s3
+        dsl:
+          - contains(tolower(header), 'x-guploader-uploadid')
+        negative: true
+
+      - type: word
+        name: aws-api-gateway
+        part: header
+        words:
+          - 'X-Amz-Apigw-Id:'
+
+      - type: word
+        name: aws-kms
+        part: header
+        words:
+          - 'X-Amz-Server-Side-Encryption:'
+
+      - type: word
+        name: aws-xray
+        part: header
+        words:
+          - 'X-Amzn-Trace-Id:'
+
+      - type: word
+        name: aws-waf-captcha
+        part: header
+        words:
+          - 'X-Amzn-Waf-Action:'
+
+
