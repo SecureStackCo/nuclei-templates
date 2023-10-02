@@ -6,11 +6,11 @@ info:
   severity: info
   metadata:
     max-request: 3
-    verified: true
-    shodan-query:
-      - x-amz-cf-pop:
-      - x-amz-cf-id:
-  tags: tech,aws,kms,amazon
+    #verified: true
+    #shodan-query:
+    # - x-amz-cf-pop:
+    # - x-amz-cf-id:
+  tags: tech,aws,cloudfront,amazon,cdn
 
 http:
   - method: GET

@@ -6,9 +6,9 @@ info:
   severity: info
   metadata:
     max-request: 3
-    verified: true
-    shodan-query:
-      - x-amz-server-side-encryption:
+   #verified: true
+   #shodan-query:
+   #  - x-amz-server-side-encryption:
   tags: tech,aws,kms,amazon
 
 http:

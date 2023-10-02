@@ -6,9 +6,9 @@ info:
   severity: info
   metadata:
     max-request: 3
-    verified: true
-    shodan-query:
-      - x-amz-apigw-id:
+   #verified: true
+   #shodan-query:
+   #  - x-amz-apigw-id:
   tags: tech,aws,api-gateway,amazon
 
 http:
