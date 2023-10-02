@@ -1,3 +1,8 @@
+# This Nuclei template is a comprehensive way to identify if an application 
+# is hosted in AWS or consuming AWS services. It checks for the existance of 
+# AWS itself, as well as several services: 
+# ALB, KMS, Xray, WAF, Codebuild, AppSync, Cloudfront, and API-Gateway
+
 id: aws-detect
 
 info:
@@ -6,10 +11,10 @@ info:
   severity: info
   description: Detect if AWS is being used in this target application
   reference:
-    - https://github.com/0x727/FingerprintHub
+    - https://github.com/6mil/aws-detect
   classification:
     cwe-id: CWE-200
-  tags: tech,aws,amazon
+  tags: tech,aws,amazon,graphql,appsync,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
   metadata:
     max-request: 1
 
@@ -26,7 +31,7 @@ http:
 
       - type: word
         condition: or
-        name: AWS Detected
+        #name: Main AWS Detection template
         part: header
         words:
           - 'X-Amz-Cf-Id:'
@@ -41,3 +46,69 @@ http:
           - 'X-Amzn-Trace-Id:'
           - 'X-Amz-Version-Id:'
           - 'X-Amzn-Waf-Action:'
+
+      - type: word
+        condition: or
+        name: aws-alb
+        part: header
+        words:
+          - 'Server: awselb/2.0'
+
+      - type: word
+        name: aws-cloudfront
+        part: header
+        words:
+          - 'X-Amz-Cf-Id:'
+          - 'X-Amz-Cf-Pop:'
+
+      - type: dsl
+        name: aws-cloudfront
+        condition: or
+        dsl:
+          - "contains(tolower(header), 'x-cache: hit from cloudfront')"
+          - "contains(tolower(header), 'x-cache: refreshhit from cloudfront')"
+          - "contains(tolower(header), 'x-cache: miss from cloudfront')"
+          - "contains(tolower(header), 'x-cache: error from cloudfront')"
+
+      - type: word
+        name: aws-codebuild
+        part: header
+        condition: or
+        words:
+          - "arn: arn:aws:codebuild"
+
+      - type: word
+        name: aws-codebuild
+        part: header
+        words:
+          - 'X-Amz-Meta-Codebuild-Buildarn:'
+          - 'x-amz-meta-codebuild-buildarn:'
+          - 'X-Amz-Meta-Codebuild-Content-Sha256:'
+          - 'x-amz-meta-codebuild-content-sha256:'
+          - 'X-Amz-Meta-Codebuild-Content-Md5:'
+          - 'x-amz-meta-codebuild-content-md5:'
+
+      - type: word
+        name: aws-api-gateway
+        part: header
+        words:
+          - 'X-Amz-Apigw-Id:'
+
+      - type: word
+        name: aws-kms
+        part: header
+        words:
+          - 'X-Amz-Server-Side-Encryption:'
+
+      - type: word
+        name: aws-xray
+        part: header
+        words:
+          - 'X-Amzn-Trace-Id:'
+
+      - type: word
+        name: aws-waf-captcha
+        part: header
+        words:
+          - 'X-Amzn-Waf-Action:'
+

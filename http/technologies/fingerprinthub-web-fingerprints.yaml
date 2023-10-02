@@ -15116,18 +15116,3 @@ http:
           - Weblate
           - <meta name="author" content="Michal Čihař" />
         condition: and
-
-      - type: word
-        condition: or
-        name: AWS
-        part: header
-        words:
-          - 'X-Amz-Cf-Id:'
-          - 'X-Amz-Cf-Pop:'
-          - 'X-Amz-Server-Side-Encryption:'
-          - 'X-Amzn-Requestid:'
-          - 'X-Amzn-Errortype:'
-          - 'X-Amz-Apigw-Id:'
-          - 'X-Amz-Content-Sha256:'
-          - 'X-Amz-Date:'
-          - 'X-Amzn-Trace-Id:'
