@@ -24,7 +24,7 @@ http:
       - "{{BaseURL}}"
 
     host-redirects: true
-    max-redirects: 2
+    max-redirects: 4
 
     matchers-condition: or
     matchers:
@@ -55,6 +55,8 @@ http:
         part: header
         words:
           - 'Server: awselb/2.0'
+          - 'Set-Cookie: AWSALB='
+          - 'Set-Cookie: AWSALBCORS='
 
       - type: word
         name: aws-cloudfront
