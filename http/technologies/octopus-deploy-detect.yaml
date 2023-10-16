@@ -1,0 +1,34 @@
+id: octopus-deploy-detect
+
+info:
+  name: Octopus Deploy
+  author: 6mile
+  severity: info
+  description: Detect if this is an Octopus Deploy server
+  reference:
+    - https://octopus.com/docs/security/http-security-headers
+  classification:
+    cwe-id: CWE-200
+  tags: git,deploy,octopus
+  metadata:
+    verified: true
+    shodan-query: Server:"Octopus Deploy"
+    max-request: 3
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    host-redirects: true
+    max-redirects: 3
+
+    matchers-condition: or
+    matchers:
+
+      - type: word
+        condition: or
+        part: header
+        words:
+          - 'Octopus-Node:'
+          - 'Server: Octopus Deploy'
