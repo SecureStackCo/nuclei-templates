@@ -11,7 +11,7 @@ info:
   severity: info
   description: Detect if AWS is being used in this target application
   reference:
-    - https://github.com/6mil/aws-detect
+    - https://github.com/6mile/aws-detect
   classification:
     cwe-id: CWE-200
   tags: tech,aws,amazon,graphql,appsync,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
@@ -24,7 +24,7 @@ http:
       - "{{BaseURL}}"
 
     host-redirects: true
-    max-redirects: 2
+    max-redirects: 3
 
     matchers-condition: or
     matchers:
@@ -33,6 +33,7 @@ http:
         condition: or
         #name: Main AWS Detection template
         part: header
+        case-insensitive: true
         words:
           - 'X-Amz-Cf-Id:'
           - 'X-Amz-Cf-Pop:'
@@ -53,12 +54,14 @@ http:
         condition: or
         name: aws-alb
         part: header
+        case-insensitive: true
         words:
           - 'Server: awselb/2.0'
 
       - type: word
         name: aws-cloudfront
         part: header
+        case-insensitive: true
         words:
           - 'X-Amz-Cf-Id:'
           - 'X-Amz-Cf-Pop:'
@@ -75,6 +78,7 @@ http:
       - type: word
         name: aws-codebuild
         part: header
+        case-insensitive: true
         words:
           - "arn: arn:aws:codebuild"
           - 'X-Amz-Meta-Codebuild-Buildarn:'
@@ -87,23 +91,29 @@ http:
       - type: word
         name: aws-api-gateway
         part: header
+        case-insensitive: true
         words:
           - 'X-Amz-Apigw-Id:'
+          - 'X-Amzn-Requestid:'
+          - 'X-Amzn-Errortype: MissingAuthenticationTokenException'
 
       - type: word
         name: aws-kms
         part: header
+        case-insensitive: true
         words:
           - 'X-Amz-Server-Side-Encryption:'
 
       - type: word
         name: aws-xray
         part: header
+        case-insensitive: true
         words:
           - 'X-Amzn-Trace-Id:'
 
       - type: word
         name: aws-waf-captcha
+        case-insensitive: true
         part: header
         words:
           - 'X-Amzn-Waf-Action:'
