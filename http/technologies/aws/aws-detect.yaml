@@ -1,7 +1,8 @@
 # This Nuclei template is a comprehensive way to identify if an application 
 # is hosted in AWS or consuming AWS services. It checks for the existance of 
 # AWS itself, as well as several services: 
-# ALB, KMS, Xray, WAF, Codebuild, AppSync, Cloudfront, and API-Gateway
+# ALB, KMS, Xray, WAF, Codebuild, AppSync, Cloudfront, and API-Gateway,
+# and DynamoDB
 
 id: aws-detect
 
@@ -14,7 +15,7 @@ info:
     - https://github.com/6mile/aws-detect
   classification:
     cwe-id: CWE-200
-  tags: tech,aws,amazon,graphql,appsync,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway
+  tags: tech,aws,amazon,graphql,appsync,xray,kms,waf,alb,cloudfront,codebuild,git,api-gateway,dynamodb
   metadata:
     max-request: 1
 
@@ -57,6 +58,8 @@ http:
         case-insensitive: true
         words:
           - 'Server: awselb/2.0'
+          - 'Set-Cookie: AWSALB='
+          - 'Set-Cookie: AWSALBCORS='
 
       - type: word
         name: aws-cloudfront
@@ -117,4 +120,13 @@ http:
         part: header
         words:
           - 'X-Amzn-Waf-Action:'
+
+-     - type: word
+-       name: aws-dynamodb
+        case-insensitive: true
+-       part: header
+-       words:
+-         - 'X-Amz-Crc32:'
+-         - 'X-Amz-Target:'
+
 
